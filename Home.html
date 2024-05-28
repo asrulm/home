@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Photographer Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a passionate photographer who loves capturing the beauty of the world through my lens. Explore my work and feel free to get in touch for collaborations or bookings.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Sample Photo 1">
+                <img src="https://via.placeholder.com/300" alt="Sample Photo 2">
+                <img src="https://via.placeholder.com/300" alt="Sample Photo 3">
+                <img src="https://via.placeholder.com/300" alt="Sample Photo 4">
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I've worked on. Stay tuned for detailed descriptions of each project.</p>
+            <ul>
+                <li><strong>Project 1:</strong> Description of project 1.</li>
+                <li><strong>Project 2:</strong> Description of project 2.</li>
+                <li><strong>Project 3:</strong> Description of project 3.</li>
+                <li><strong>Project 4:</strong> Description of project 4.</li>
+            </ul>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Stay tuned for my latest blog posts where I share tips, stories, and the inspiration behind my photos.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
